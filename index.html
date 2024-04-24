@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferrambo</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="render()">
+
+    <a class="home-link" href="index.html">
+        <header>
+            <img class="logo-img" src="./img/logo.png" alt="">
+            <h1>Lieferrambo</h1>
+            </div>
+        </header>
+    </a>
+
+    <div class="main-container">
+        <img class="banner-img" src="./img/pizzeria.jpg" alt="">
+        <div class="title-container">
+            <div class="restaurant-logo">
+                <span>PIZZERIA DA ROBERTO</span>
+            </div>
+            <h2>Pizzeria da Roberto</h2>
+            <div>
+                <img src="./img/star-fill.svg" alt="">
+                <span>4.9 (200+).</span>
+            </div>
+            <div>
+                <img src="./img/bag.svg" alt="">
+                <span>Min. 25.00€</span>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#Pizza">Pizza</a>
+            <a href="#Pasta">Pasta</a>
+            <a href="#Insalata">Insalata</a>
+        </div>
+        <div id="menu"></div>
+    </div>
+
+    <div id="basketContainer">
+        <h2>Warenkorb</h2>
+        <div id="emptyBasket" class="basket d-none">
+            <img src="./img/bag.svg" alt="">
+            <h2>Fülle deinen Warenkorb</h2>
+            <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
+        </div>
+        <div id="basket"></div>
+        <div id="toPay"></div>
+    </div>
+
+    <div id="basketContainerMobile">
+        <div class="bcm-container">
+            <div class="mb-header">
+                <h2>Warenkorb</h2>
+                <img onclick="toggleMobileBasket('none')" src="./img/x.svg" alt="">
+            </div>
+            <div id="emptyBasketMobile" class="basket d-none">
+                <img src="./img/bag.svg" alt="">
+                <h2>Dein Warenkorb ist leer</h2>
+                <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
+            </div>
+            <div id="basketMobile">
+            </div>
+            <div id="toPayMobile">
+            </div>
+        </div>
+    </div>
+
+    <div id="payBtnMobile"></div>
+
+    <footer id="footer">
+        <h2>Footer</h2>
+    </footer>
+
+</body>
+
+</html>

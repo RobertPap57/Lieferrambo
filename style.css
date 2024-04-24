@@ -1,0 +1,489 @@
+body {
+    font-family: 'roboto';
+    font-size: 16px;
+    margin: 0;
+}
+
+.home-link {
+    text-decoration: none;
+}
+
+
+footer {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ffa500;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.banner-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-container h2 {
+    text-align: start;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.title-container img {
+    height: 16px;
+    filter: invert(58%) sepia(62%) saturate(810%) hue-rotate(0deg) brightness(103%) contrast(105%);
+}
+
+.title-container {
+    padding: 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.restaurant-logo span {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.restaurant-logo {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 6px;
+    background-color: orange;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.nav-links {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dish-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px 0px 20px;
+}
+
+#menu {
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menu img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.dish-container .button {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    font-size: 34px;
+    position: absolute;
+    right: 14px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.dish-container span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dish-container span:last-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dish-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.basket img {
+    height: 60px;
+}
+
+.basket span {
+    text-align: center;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#basketContainer h2 {
+    padding-bottom: 40px !important;
+}
+
+#basketContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 360px;
+    height: 88%;
+    top: 100px;
+    right: 0px;
+    padding: 20px;
+    transition: all 125ms ease-in-out;
+}
+
+#basket {
+    overflow-y: scroll;
+    padding-inline: 20px;
+    width: 100%;
+}
+
+
+.dish-in-basket .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    border: 0;
+    font-size: 26px;
+    cursor: pointer;
+    color: inherit;
+}
+
+
+.dish-in-basket {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.dish-in-basket span:nth-child(3) {
+    margin-left: auto;
+}
+
+.dish-in-basket div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.dish-in-basket div:first-child {
+    display: flex;
+    gap: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.d-none {
+    display: none;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+#toPay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#toPay div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#toPay div:nth-child(3) {
+    font-weight: 500;
+}
+
+#payBtn {
+    background-color: #ffa500;
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.order-received {
+
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.order-received h3 {
+    text-align: center;
+    width: 50%
+}
+
+.pay-btn-mobile {
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fixed-btn {
+    background-color: #ffa500;
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 98%;
+    align-self: center;
+}
+
+#basketContainerMobile {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: none;
+}
+
+.bcm-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 96%;
+    height: 96%;
+    padding: 20px;
+}
+
+.mb-header img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.mb-header img:hover {
+    width: 40px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.mb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#basketMobile {
+    overflow-y: scroll;
+    padding-right: 10px;
+    margin-right: -20px;
+}
+
+#toPayMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+#toPayMobile div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#toPayMobile div:nth-child(3) {
+    font-weight: 500;
+}
+
+@media (min-width:1024px) {
+
+    footer {
+        height: 80px !important;
+    }
+
+    #basketContainerMobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #basketContainer {
+        display: none;
+    }
+
+    .main-container {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    .pay-btn-mobile {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .banner-img {
+        height: 200px;
+    }
+
+    .restaurant-logo {
+        bottom: 114px;
+    }
+
+    .nav-links {
+        padding: 10px;
+    }
+
+    #menu {
+        padding-top: 30px;
+    }
+
+    .dish-container span:first-child {
+        font-size: 16px;
+    }
+
+    .dish-container span:last-child {
+        font-size: 16px;
+    }
+
+    .dish-container .button {
+        width: 32px;
+        height: 32px;
+        font-size: 28px;
+    }
+
+    .pay-btn-mobile {
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-received h3 {
+        width: auto;
+    }
+
+    .order-received h1 {
+        text-align: center;
+    }
+
+}
